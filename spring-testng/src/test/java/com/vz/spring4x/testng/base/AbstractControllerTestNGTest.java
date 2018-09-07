@@ -1,4 +1,4 @@
-package com.victorzhang.spring4x.testng.base;
+package com.vz.spring4x.testng.base;
 
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
@@ -11,9 +11,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
+ * 控制层测试类
+ *
  * @author zhangwei
  * @email zhangwei@cetiti.com
- * @create 2018-01-04 09:15:54
+ * @date 2018-01-04 09:15:54
  */
 public abstract class AbstractControllerTestNGTest extends AbstractTestNGTest {
 
@@ -27,7 +29,7 @@ public abstract class AbstractControllerTestNGTest extends AbstractTestNGTest {
     }
 
     protected void getMock(String url, Object[] objects, String expectedContent) throws Exception {
-        MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.get(url,objects);
+        MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.get(url, objects);
         this.jsonRequestMock(builder, expectedContent);
     }
 

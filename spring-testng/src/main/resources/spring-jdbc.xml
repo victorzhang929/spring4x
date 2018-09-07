@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/context/spring-context-4.2.xsd ">
 
     <context:property-placeholder location="spring-jdbc.properties" />
-    <context:component-scan base-package="com.victorzhang.spring4x.testng">
+    <context:component-scan base-package="com.vz.spring4x.testng">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
 

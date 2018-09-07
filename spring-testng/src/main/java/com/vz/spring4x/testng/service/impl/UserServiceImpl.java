@@ -1,15 +1,16 @@
-package com.victorzhang.spring4x.testng.service.impl;
+package com.vz.spring4x.testng.service.impl;
 
-import com.victorzhang.spring4x.testng.dao.UserDao;
-import com.victorzhang.spring4x.testng.domain.User;
-import com.victorzhang.spring4x.testng.service.UserService;
+import com.vz.spring4x.testng.dao.UserDao;
+import com.vz.spring4x.testng.domain.User;
+import com.vz.spring4x.testng.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
+ * 用户业务接口实现
  * @author zhangwei
  * @email zhangwei@cetiti.com
- * @create 2018-01-03 09:44:00
+ * @date 2018-01-03 09:44:00
  */
 @Service("userService")
 public class UserServiceImpl implements UserService {

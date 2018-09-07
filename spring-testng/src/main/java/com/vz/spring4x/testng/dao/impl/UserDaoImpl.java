@@ -1,15 +1,17 @@
-package com.victorzhang.spring4x.testng.dao.impl;
+package com.vz.spring4x.testng.dao.impl;
 
-import com.victorzhang.spring4x.testng.dao.UserDao;
-import com.victorzhang.spring4x.testng.domain.User;
+import com.vz.spring4x.testng.dao.UserDao;
+import com.vz.spring4x.testng.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 /**
+ * 用户数据接口实现
+ *
  * @author zhangwei
  * @email zhangwei@cetiti.com
- * @create 2018-01-03 09:44:28
+ * @date 2018-01-03 09:44:28
  */
 @Repository("userDao")
 public class UserDaoImpl implements UserDao {

@@ -1,14 +1,15 @@
-package com.victorzhang.spring4x.testng.controller;
+package com.vz.spring4x.testng.controller;
 
-import com.victorzhang.spring4x.testng.base.AbstractControllerTestNGTest;
+import com.vz.spring4x.testng.base.AbstractControllerTestNGTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.testng.annotations.Test;
 
 /**
+ * 用户控制器测试类
  * @author zhangwei
  * @email zhangwei@cetiti.com
- * @create 2018-01-04 09:27:24
+ * @date 2018-01-04 09:27:24
  */
 @ContextConfiguration({"classpath:/spring-jdbc.xml", "classpath:/spring-mvc.xml"})
 public class UserControllerTest extends AbstractControllerTestNGTest {
